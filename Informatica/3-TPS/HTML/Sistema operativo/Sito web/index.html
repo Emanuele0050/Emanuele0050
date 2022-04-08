@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/style.css" rel="stylesheet" type="text/css">
+    <title>Sistema Operativo</title>
+</head>
+<body>
+    <h1 id="titolo">Cosè un Sistema Operativo</h1>
+    <p>Il sistema opertivo è un software che serve a gestire il computer e interpreta i comandi che può dare l'utente o un software applicativo.</p>
+    <h2>Premessa:</h2>
+    <ol>
+        <li>Quando l'utente accende il computer viene eseguito 
+            un programma "bootstrap" che è memorizzato su un chip della scheda madre (memoria rom).</li>
+        <li>Ogni componente hardware esegue un programma di diagnostica POST che controlla che tutto funzioni correttamente: CPU, scheda video, ram, tastiera...  </li>
+        <li>Viene caricato dall'hard disk una parte del sistema operativo sulla ram: kernel o nucleo del sistema operativo.</li>
+      </ol><br>
+
+      <h2>Compiti del  SO</h2>
+      
+<ol>
+	<li>Gestire le risorse hardware: CPU, RAM, ...</li>
+	<li>Intergaccia tra l'utente e il computer: prende i comandi dall'utente e li fa eseguire all'hardware.</li>
+	<li>Interfaccia tra il software applicativo e il computer.</li>
+</ol><br>
+      <h2>Come è fatto:</h2>
+      <p>É composto da vari programmi che parlano tra loro.</p>
+	  <p>Il kernel è una parte del SO che è sempre presente sulla ram fino allo spegnimento del computer.</p>
+      <br>
+      <img src="\\192.168.1.176\Public\03-Scuola\Emanuele\02-ITIS Aldini Valeriani Sirani\3^ CIN\Informatica\TPS\HTML\Sistema Operativo\Immagini" alt="Modello sistema operativo" width="500" height="600">
+
+      <h2>Struttura del SO:</h2>
+<ol>
+	<li>Nucleo (kernel)</li>
+	<li>Gestore della memoria centrale</li>
+	<li>Gestore pericferiche</li>
+    <li>File system</li>
+    <li>Interfaccia utente (shell)</li>
+    <li>software applicativi</li>
+	
+	<p>Onion Skin (Buccia di cipolla)</p>
+</ol><br>
+<p>I vari livelli vedono il livello sottostante come un oggetto a se (macchina virtuale) e dialoga con questo usando le primitive (procedure standard)</p>
+<h2>Il kernel:</h2>
+<p>É quella parte di sistema operativo che viene caricato subito in ram. É il livello che dialoga direttamente con l'hw.</p>
+<h2>I compiti del kernel sono: </h2>
+<ol>
+    <li>Avvio e chiusura dei programmi.</li>
+    <li>Assegnazione della CPU ai vari processi.</li>
+    <li>Sincronizzazione tra i processi.</li>
+    <li>Sincronizzazione dei processi con l'ambiente esterno.</li>
+</ol><br>
+<h2>L'importanza del kernel</h2>
+<p>Il kernel isola completamente l'hw così tutto quello che funziona sopra è independente dall'hw e può funzionare su diversi computer (portabilità).</p><br>
+
+<h2>La Shell</h2>
+<p>La shell è l'interfaccia tra l'utente e il kernel. Le chiamate di funzione vengono fatte dalla shell sul kernel.<br>
+<p> Può essere di 2 tipi:</p>
+CUI: Comand use interface. <br>
+GUI: Grafical use interface.</p><br>
+
+<h2>Alcuni esempi di sistemi operativi attualmente usati: </h2>
+<br> <p><a href="https://it.wikipedia.org/wiki/Microsoft_Windows">Windows 11</a></p>
+
+<p><a href="https://it.wikipedia.org/wiki/MacOS">MacOs</a></p>
+
+<p><a href="https://www.linux.it/">Linux</a></p>
+
+
+
+
+</body>
+</html>

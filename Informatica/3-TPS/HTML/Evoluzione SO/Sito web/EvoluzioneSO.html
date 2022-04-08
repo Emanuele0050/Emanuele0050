@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EvoluzioneSO</title>
+</head>
+<body>
+    <h1>Evoluzione dei sistemi operativi</h1>
+
+    <p>Classificazione dei sistemi operativi per rapporto uomo macchina: </p>
+    <ul>
+        <li>Sistemi dedicati</li>
+        <li>Sistemi a lotti (batch)</li>
+        <li>Sistemi interattivi(conversazionali, in tempo reale, transazionali)</li>
+      </ul>
+<h2>1945-1955</h2>
+<p>I computer erano: pochi, costosi, lenti e valvolari. Venivano usati usati sopratutto per fare ricerche e per le università.</p>
+
+<p>Il sistema operativo trasferiva blocchi di dati dalla memoria principale a quella ausiliaria.</p>
+
+<h2>1955-1965</h2>
+<p>Gestione a lotti</p>
+<p>Esegue programmi da lotti di schede perforate e un lotto (batch) veniva chiamato JOB.</p>
+
+<h2>Batch monitor</h2>
+
+<p>Primo sistema operativo batch (sviluppato da General Motors per ibm) usava JCL (Job contro language): il linguangio di conversazione con il calcolatore.</p>
+
+<h2>Caratteristiche del SO</h2>
+<ul>
+    <li>SO sempre in memoria</li>
+    <li>Un solo Job alla volta in memoria</li>
+    <li>Nessuna interazione tra l'utente e il computer durante l'esecuzione di un Job</li>
+    <li>In caso di attesa di un evento la CPU resta inattiva</li>
+	<li>Scarsa efficienza: la CPU non lavora durante le operazioni di I/O del Job corrente</li>
+	<li>Evoluzione: la schede vengono sotituite dai nastri magnetici</li>
+  </ul>
+
+<h2>Buffer</h2>
+<img src="buffer.png" alt="Buffering" width="400" height="300">
+<ul>
+    <li>Il buffer è una porzione di memoria piccola che serve per salvare i dati velocemente</li>
+  </ul>
+<h2>Spooling</h2>
+<img src="spool.png" alt="Spooling" width="400" height="300">
+<p>Dischi spool usati come buffer</p>
+<ul>
+    <li>Sistemi multiutente</li>
+ </ul>
+ 
+h2>1965-1980</h2>
+<p>Sistemi interattivi</p>
+
+<ul>
+    <li>DMA (Direct Memory Accezss (IBM) -> Periferiche che accedono alla memoria direttamente</li>
+    <li>Multiprogrammazione:</li>
+    <li>Scheduling: Scheduling del Job e Scheduling della CPU</li>
+    <li>il SO adesso deve gestire la memoria RAM dividendola per i vari Job in esecuzione</li>
+	Immagine
+	<li>Time Sharing: il SO lascia una quantità di tempo "determinato" ad ogni Job (Time Slice è l'unità di tempo)</li>
+	Immagine
+	<li>Evoluzione: la schede vengono sotituite dai nastri magnetici</li>
+  </ul> 
+
+<h2>Evoluzione:</h2>
+<ul>
+    <li>DEC -> Computer PDP10</li>
+	<li>IBM -> Computer System370</li>
+	<li>Memoria principale su circuiti integrati, aritmetica in floating point</li>
+	<li>Nuovo SO -> VM 370</li>
+	
+	<li>DEC -> Computer VAX (evoluzione del PDP)</li>
+	<li>DEC -> Indirizzamento virtuale, demand paging</li>
+	<li>Nuovo SO -> Unix</li>
+	
+	<li>La multiutenza (più utenti possono usare il computer) porta al problema della "riservatezza" dei dati</li>
+ </ul>
+
+<h2>Home Computing:</h2>
+<ul>
+    <li>ATARI (192 da Nolan Bushnell)</li>
+	<li>Commodore</li>
+	<li>Sinclair</li>
+	<li>Computer casalinghi per giochi e intrattenimento.</li>
+	
+	<li>Monitor: TV di casa collegato con cavo antenna</li>
+	<li>Memoria di massa: prima audiocassette poi Floppy Disk</li>
+	<li>SO -> Ogni sitema aveva il proprio e permettevano di programmare in linguaggio BASIC</li>
+	
+	<li>Si diffondono perchè costano poco e comincia il mercato dei videogiochi</li>
+ </ul>
+ 
+ h2>Sistemi dedicati:</h2>
+<ul>
+    <li>Computer piccoli per uso casalingo ma più potenti dei Mainframe degli anni 70</li>
+	<li>SO:</li>
+	<li>1982-Ms Dos (Micro Soft Disk Operative System) - X86 Intel su PC IBM e IBM compatibili</li>
+	<li>Si sviluppa la grafica: i monitor diventano a matrice (pixel), nascono programmi di grafica e si usa il mouse</li>
+	
+	<li>1984-MacOS (Mcintosh Operative System) è il primo sistema operativo grafico che usa il mouse</li>
+	<li>1985-Windows 1 (SO grafico di Microsoft</li>
+	
+	<li>Tutti questi sitemi sono detti monoutente perchè il SO non permette il multiutente</li>
+ </ul>
+ 
+ h2>Sistemi odierni:</h2>
+<ul>
+    <li>SO per Server:     il server ha il compito di mettere a disposizione dei computer connessi in rete</li>
+	<li>                   dati (file server come NAS) e servizi (come e-mail)</li>
+	<li>SO in Tempo Reale: apparecchi Real Time servono a gestire computer che hanno necessità di dare risultati in tempo reale.</li>
+	<li>                   ad esempio calcolatori che servono a gestire lo spazio aereo, a far scattare un Airbag di una autovettura</li>
+	<li>                   si dividono in Hard Real Time(il tempo è gestito dall'Hardware perchè non suò essere ritardato il risultato.</li>
+	<li>                   e Soft Real Time: possono essere gestiti ritardi.</li>
+	<li>SO Embedded:       un dispositivo che è considerato un blocco unico hardware e software con sistemi dedicati:</li>
+	<li>                   telefoni cellulari, elettrodomestici, palmari</li>
+	<li>SO su Smart Card:  le Smartcard sono piccolissimi computer completi molto diffusi come le Carte di Credito, i Documenti digitali</l>
+	<li>                  (Patente di guida, Carta di Identità), chiavi elettroniche per sblocco porte, carte di vicinanza (non ancora molto diffuse)</li>
+	<li>                   hanno dei SO scritti da software house come la stessa Microsoft</li>
+	<li>SO per Smartphone: ormai diffusissimi gli smartphone utilizzano principalmente i SO iOs della Apple (solo Iphone Apple) oppure Android</li>
+	<li>                   di proprietà di Google utilizzato da quasi tutti gli altri produttori (Motorola, Samsung, Xiaomi) ma ci sono stati anche</li>
+	<li>                   altri SO come BlackBerry (solo su Smartphone BlackBerry), Symbian (sui primi Smartphone della Nokia) e Windows Phone</li>
+ 
+ 
+ 
+
+</body>
+</html>

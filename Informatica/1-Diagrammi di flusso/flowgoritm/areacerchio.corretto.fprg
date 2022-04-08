@@ -1,0 +1,30 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aldini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-30 04:30:20 PM"/>
+        <attribute name="created" value="YWxkaW5pO0FVTEEyNDAtMTA7MjAyMS0wOS0yODsiMDE6MTA6NDMgIjsyMzk2"/>
+        <attribute name="edited" value="YWxkaW5pO0FVTEEyNDAtMTA7MjAyMS0wOS0yODsiMDE6Mjk6MzIgIjsxOzI1MTI="/>
+        <attribute name="edited" value="RW1hbnVlbGU7REVTS1RPUC1UNEtGRTM4OzIwMjEtMDktMzA7MDQ6MzA6MjAgUE07NTszMjM0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Raggio, AreaCerchio" type="Real" array="False" size=""/>
+            <output expression="&quot;scrivi il valore del Raggio&quot;" newline="True"/>
+            <input variable="Raggio"/>
+            <if expression="Raggio&gt;0">
+                <then/>
+                <else>
+                    <output expression="&quot;Valore errato. Scrivi il valore del Raggio corretto&quot;" newline="True"/>
+                    <input variable="Raggio"/>
+                </else>
+            </if>
+            <assign variable="areaCerchio" expression="Raggio*Raggio*3.14"/>
+            <output expression="&quot;L'area del cerchio &#232; di&quot;" newline="True"/>
+            <output expression="AreaCerchio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

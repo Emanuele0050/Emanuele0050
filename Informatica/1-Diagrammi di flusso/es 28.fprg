@@ -1,0 +1,24 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aldini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-28 01:43:05 "/>
+        <attribute name="created" value="YWxkaW5pO0FVTEEyNDAtMTA7MjAyMS0wOS0yODsiMDE6MzA6NTUgIjsyNDAx"/>
+        <attribute name="edited" value="YWxkaW5pO0FVTEEyNDAtMTA7MjAyMS0wOS0yODsiMDE6NDM6MDUgIjsyOzI1MDk="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="velocit&#224;, spazio, asfalto, contatore" type="Real" array="False" size=""/>
+            <assign variable="controllo" expression="0"/>
+            <declare name="tipoAsfalto" type="String" array="False" size=""/>
+            <output expression="&quot;scrivi la velocit&#224; a cui stai andando&quot;" newline="False"/>
+            <do expression="velocit&#224; &gt; 140">
+                <output expression="&quot;scrivi a quale velocit&#224; stai  andando (nei limiti del codice stradale)&quot;" newline="True"/>
+            </do>
+            <output expression="&quot;su che tipo di asfalto ti trovi?&#13;&#10;ruvido, liscio, bagnato, ghiacciato&quot;" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

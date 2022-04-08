@@ -1,0 +1,60 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aldini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-30 05:45:40 PM"/>
+        <attribute name="created" value="YWxkaW5pO0FVTEEyNDAtMTA7MjAyMS0wOS0yODsiMDE6MzA6NTUgIjsyNDAx"/>
+        <attribute name="edited" value="YWxkaW5pO0FVTEEyNDAtMTA7MjAyMS0wOS0yODsiMDE6NDM6MDUgIjsyOzI1MDk="/>
+        <attribute name="edited" value="RW1hbnVlbGU7REVTS1RPUC1UNEtGRTM4OzIwMjEtMDktMzA7MDU6NDU6NDAgUE07NjszMjQ0"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="Velocit&#224;, Spazio" type="Real" array="False" size=""/>
+            <output expression="&quot;A che velocit&#224; stai andando?&quot;" newline="True"/>
+            <input variable="Velocit&#224;"/>
+            <declare name="Asfalto" type="Integer" array="False" size=""/>
+            <output expression="&quot;su che tipo di sfalto stai guidando? &#13;&#10;1 - ruvido&#13;&#10;2 - liscio&#13;&#10;3 - bagnato&#13;&#10;4 - ghiacciato&quot;" newline="True"/>
+            <input variable="Asfalto"/>
+            <declare name="f" type="Real" array="False" size=""/>
+            <if expression="Asfalto&lt;0 or Asfalto&gt;5">
+                <then/>
+                <else>
+                    <output expression="&quot;Valore errato&quot;" newline="True"/>
+                    <input variable="Asfalto"/>
+                </else>
+            </if>
+            <if expression="Asfalto=1">
+                <then>
+                    <assign variable="f" expression="0.6"/>
+                </then>
+                <else>
+                    <if expression="Asfalto=2">
+                        <then>
+                            <assign variable="f" expression="0.5"/>
+                        </then>
+                        <else>
+                            <if expression="Asfalto=3">
+                                <then>
+                                    <assign variable="f" expression="0.4"/>
+                                </then>
+                                <else>
+                                    <if expression="Asfalto=4">
+                                        <then>
+                                            <assign variable="f" expression="0.1"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <assign variable="Spazio" expression="Velocit&#224;^2/(250*f)"/>
+            <output expression="Spazio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

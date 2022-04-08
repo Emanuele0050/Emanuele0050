@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aldini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-28 12:52:48 "/>
+        <attribute name="created" value="YWxkaW5pO0FVTEEyNDAtMTA7MjAyMS0wOS0yODsiMTI6Mjk6NDIgIjsyNDA3"/>
+        <attribute name="edited" value="YWxkaW5pO0FVTEEyNDAtMTA7MjAyMS0wOS0yODsiMTI6NTI6NDggIjsxOzI1MTc="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="x" type="Integer" array="False" size=""/>
+            <assign variable="x" expression="0"/>
+            <while expression="x&lt;10">
+                <output expression="&quot;ciao&quot;" newline="True"/>
+                <assign variable="x" expression="x+1"/>
+            </while>
+            <output expression="x" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

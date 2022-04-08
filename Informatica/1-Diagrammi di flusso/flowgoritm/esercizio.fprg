@@ -1,0 +1,56 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="zhar.oma.2005"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-28 07:47:11 "/>
+        <attribute name="created" value="emhhci5vbWEuMjAwNTtBVUxBMjQwLTIwOzIwMjEtMDktMjg7IjAxOjI5OjUyICI7MjgyNw=="/>
+        <attribute name="edited" value="emhhci5vbWEuMjAwNTtBVUxBMjQwLTIwOzIwMjEtMDktMjg7IjAxOjQzOjEyICI7MTsyOTI3"/>
+        <attribute name="edited" value="b21hcno7TEFQVE9QLUdURVNMUFA0OzIwMjEtMDktMjg7IjA3OjQ3OjExICI7MjsyOTY1"/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="s" type="Real" array="False" size=""/>
+            <declare name="v" type="Real" array="False" size=""/>
+            <declare name="a" type="Integer" array="False" size=""/>
+            <output expression="&quot;Inserisci la velocit&#224;&quot;" newline="True"/>
+            <input variable="v"/>
+            <output expression="&quot;Inserisci le condizioni dell'asfalto: &#13;&#10;0= asfalto ruvido&#13;&#10;1= asfalto liscio&#13;&#10;2= asfalto bagnato&#13;&#10;3= asfalto ghiacciato&quot;" newline="True"/>
+            <input variable="a"/>
+            <do expression="0&gt;=a or a&gt;4">
+                <output expression="&quot;Errore, inserire parametro valido&quot;" newline="True"/>
+                <input variable="a"/>
+            </do>
+            <if expression="a=0">
+                <then>
+                    <assign variable="s" expression="(v^2)/250*0.6"/>
+                </then>
+                <else>
+                    <if expression="a=1">
+                        <then>
+                            <assign variable="s" expression="(v^2)/250*0.5"/>
+                        </then>
+                        <else>
+                            <if expression="a=2">
+                                <then>
+                                    <assign variable="s" expression="(v^2)/250*0.4"/>
+                                </then>
+                                <else>
+                                    <if expression="a=3">
+                                        <then>
+                                            <assign variable="s" expression="(v^2)/250*0.1"/>
+                                        </then>
+                                        <else/>
+                                    </if>
+                                </else>
+                            </if>
+                        </else>
+                    </if>
+                </else>
+            </if>
+            <output expression="s" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>

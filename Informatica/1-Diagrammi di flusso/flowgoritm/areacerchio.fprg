@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<flowgorithm fileversion="2.11">
+    <attributes>
+        <attribute name="name" value=""/>
+        <attribute name="authors" value="aldini"/>
+        <attribute name="about" value=""/>
+        <attribute name="saved" value="2021-09-28 01:29:32 "/>
+        <attribute name="created" value="YWxkaW5pO0FVTEEyNDAtMTA7MjAyMS0wOS0yODsiMDE6MTA6NDMgIjsyMzk2"/>
+        <attribute name="edited" value="YWxkaW5pO0FVTEEyNDAtMTA7MjAyMS0wOS0yODsiMDE6Mjk6MzIgIjsxOzI1MTI="/>
+    </attributes>
+    <function name="Main" type="None" variable="">
+        <parameters/>
+        <body>
+            <declare name="area, raggio, areacerchio, PiGreco" type="Real" array="False" size=""/>
+            <assign variable="PiGreco" expression="3.14"/>
+            <do expression="raggio&lt;=0">
+                <output expression="&quot;Scrivi il valore del raggio&quot;" newline="True"/>
+                <input variable="raggio"/>
+            </do>
+            <assign variable="areaCerchio" expression="raggio*raggio*PiGreco"/>
+            <output expression="&quot;L'area del cerchio &#232; di&quot;" newline="True"/>
+            <output expression="areaCerchio" newline="True"/>
+        </body>
+    </function>
+</flowgorithm>
